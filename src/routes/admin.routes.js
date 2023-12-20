@@ -9,9 +9,11 @@ const storage = multer.diskStorage({
     filename: (req, file, cb) => cb(null, `${Date.now()}-${file.originalname}`)
 });
 
+const upload = multer({storage});
+
 router.get('/', admin);
 router.get('/create', createView);
-router.post('/create', createItem);
+router.post('/create', upload.array('imagen', 2), createItem);
 router.get('/edit/:id', editView);
 router.put('/edit/:id', editItem);
 router.delete('delete/:id', deleteItem);

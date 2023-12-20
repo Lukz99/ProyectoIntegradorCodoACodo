@@ -1,15 +1,13 @@
-const express = require('express');
-const app = express();
-const path = require('path');
-// app.get('/home', (req, res) => res.sendFile(__dirname + '/public/index.html'))
-// app.get('/ping', (req, res) => res.send('pong'));
+const express   = require('express');
+const app       = express();
+const path      = require('path');
+const PORT      = 3300;
 
-
-const methodOverride = require('method-override');
-const mainRoutes = require('./src/routes/main.routes');
-const shopRoutes = require('./src/routes/shop.routes');
-const adminRoutes = require('./src/routes/admin.routes');
-const authRoutes = require('./src/routes/auth.routes');
+const methodOverride    = require('method-override');
+const mainRoutes        = require('./src/routes/main.routes');
+const shopRoutes        = require('./src/routes/shop.routes');
+const adminRoutes       = require('./src/routes/admin.routes');
+const authRoutes        = require('./src/routes/auth.routes');
 //const initSession = require('./src/middlewares/session');
 
 // template Engines
@@ -37,9 +35,5 @@ app.use('/auth', authRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
 app.use('/', mainRoutes);
- 
-// app.use((req, res) => {
-//     res.status(404).send('La pagina que buscas no existe.');
-// })
 
-app.listen(3300, () => console.log("servidor corriendo en http://localhost:3300"));
+app.listen(PORT, () => console.log(`🆗 Servidor corriendo en http://localhost:${PORT}`));

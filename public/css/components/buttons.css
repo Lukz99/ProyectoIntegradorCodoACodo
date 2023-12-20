@@ -34,5 +34,9 @@
     background: var(--primary-solid);
     border: var(--primary-solid);
     color: var(--light-font-solid);
-    
+}
+
+.action_btn:hover {
+    background-color: var(--secondary-900);
+    cursor: pointer;
 }
