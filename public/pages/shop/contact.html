@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funkoshop | Contact</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="icon" href="../../img/branding/isotype.svg">
+</head>
+
+<body>
+    <header><!--inicio header-->
+        <nav class="container navbar">
+            <picture class="navbar__logo">
+                <a href="../../index.html"><img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a class="navbar__link with_icon" href="../shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="../../pages/shop/shop.html" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="../../pages/shop/shop.html" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="../../pages/shop/shop.html" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item"> <a class="navbar__link" href="../shop/contact.html">CONTACTO</a></li>
+                <li class="navbar__item"> <a class="navbar__link" href="../admin/login.html">LOGIN</a></li>
+                <li> <a href="../shop/cart.html"> <img src="../../img/icons/cart-icon.svg" alt="icono de carrito"></a>
+                </li>
+            </ul>
+        </nav>
+    </header><!--fin header-->
+
+    <main class="container">
+        <section class="contacto">
+            <h2 class="tit_ppl">Contactenos</h2>
+            <div class="cont cont_flex">
+                <div class="info_contacto colum colum_50">
+                    <h3 class="tit_colum">Informacion de contacto</h3>
+                    <p class="descrip_colum">Estamos para resolver todas sus dudas.</p>
+                    <p class="desc_colum"><iconify-icon class="icon_phone" icon="mingcute:phone-fill"></iconify-icon>Telefono: 1234-4567</p>
+                    <p class="desc_colum"><iconify-icon class="icon_ws" icon="uim:whatsapp"></iconify-icon>Whatsapp: +54-9-11-2345-6789</p>
+                    <p class="desc_colum"><iconify-icon class="icon_locacion" icon="circum:location-on"></iconify-icon>Calle Siempreviva 247 - Springfield</p>
+                    <p class="desc_colum"><iconify-icon class="icon_mail" icon="uiw:mail"></iconify-icon>contacto@funkoshop.com.ar</p>
+                </div>
+
+                <form action="enviar.php" method="post" class="form colum colum_50">
+                    <label for="" class="form_label">Nombre y Apellido</label>
+                    <input name="nombre" type="text" class="form_input_txt">
+                    <label for="" class="form_label">Correo electrónico</label>
+                    <input name="mail" type="mail" class="form_input_txt">
+                    <label for="" class="form_label">Teléfono</label>
+                    <input name="telefono" type="number" class="form_input_txt">
+                    <label for="" class="form_label">Mensaje</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="form_textarea"></textarea>
+                    <input type="submit" name="submit" value="Enviar" class="btn_contact form_btn">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer><!--inicio footer seccion -->
+        <nav class="container">
+            <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
+            <ul>
+                <li><a href="../../pages/shop/shop.html">SHOP</a></li>
+                <li><a href="../../pages/admin/login.html">INGRESAR</a></li>
+                <li><a href="../../pages/shop/contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <p style="font-size: 20px;">All rights reserved 2023 - Funkoshop &copy</p>
+    </footer><!--fin footer seccion -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

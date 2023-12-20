@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Funkoshop</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="/img/branding/isotype.svg">
+</head>
+
+<body>
+    <header>
+        <% if (locals.isLogged) { %>
+            <!-- inicio header -->
+        <nav class="container navbar">
+            <picture class="navbar__logo">
+                <a href="/home"><img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a class="navbar__link with_icon" href="/shop">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="/shop?filter=funkos" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/shop?filter=remeras" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="/shop?filter=llaveros" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item"> <a class="navbar__link" href="/contact">CONTACTO</a></li>
+                <li class="navbar__item"> <a class="navbar__link" href="/auth/login">LOGIN</a></li>
+                <li> <a href="/shop/cart"> <img src="/img/icons/cart-icon.svg" alt="icono de carrito"></a>
+                </li>
+            </ul>
+        </nav>
+        <% } else { %>   
+            <nav class="container navbar">
+                <picture class="navbar__logo">
+                    <a href="/home"><img src="../../img/branding/logo_light_horizontal.svg"
+                            alt="Isologotipo de la marca funkoshop"></a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item with__submenu">
+                        <a class="navbar__link" href="/shop">VER TIENDA</a>
+                    </li>
+                    <li class="navbar__item"> <a class="navbar__link" href="/admin">ADMIN</a></li>
+                    <li class="navbar__item"> <a class="navbar__link" href="/home">SALIR</a></li>
+                </ul>
+            </nav>
+        <% }; %>    
+    </header><!-- fin header -->

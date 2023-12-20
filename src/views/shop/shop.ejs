@@ -1,0 +1,102 @@
+<%- include('../partials/header.ejs') %>
+    <main class="container texto-imaBusqueda"><!-- inicio del cuerpo principal del shop -->
+        <aside>
+            <section class="buscar">
+                <div>
+                    <p>BUSCAR</p>
+                    <form action="#">
+                        <input id="buscarItem" type="search" placeholder="item o categoria">
+                    </form>
+                </div>
+
+                <div>
+                    <p>Ordenar por</p>
+                    <form class="modifi-select" action="#">
+                        <select name="ordenar" type="search" id="Vector">
+                            <option value="mayor">Mayor a menor</option>
+                            <option value="menor">Menor a mayor</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <p>Precio</p>
+                    <form action="#" class="mayMenor">
+                        <label for="#">Min</label>
+                        <input type="search" placeholder="0" size="1" />
+                        <label for="#">- Max</label>
+                        <input type="search" placeholder="0" size="1" />
+                    </form>
+                </div>
+                <div><!-- Filtro de productos -->
+                    <p>Filtrar</p>
+                    <form action="#" class="filtrar">
+                        <ul class="filtroProducto">
+                            <li>
+                                <input type="checkbox" name="nuevos">
+                                <label for="">Nuevos</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ofertas">
+                                <label for="">Ofertas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="especial">
+                                <label for="">Edicion especial</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="favoritos">
+                                <label for="">Favoritos</label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+        </aside>
+
+        <div>
+            <ul class="slider__items card-item">
+                <% data.forEach( item => { %>
+                    <li class="slider__item "><!-- inicio cuarta seccion primer articulo -->
+                        <article>
+                            <a class="card-item__link" href="/shop/item/<%= item.product_id %>">
+                                <picture class="card-item__cover">
+                                    <span class="card-item__tag">NUEVO</span>
+                                    <img class="card-item__img--front" src="/img<%= item.image_front %>"
+                                        alt="<%= item.product_description %>">
+                                    <img class="card-item__img--back" src="/img<%= item.image_back %>"
+                                        alt="<%= item.product_description %>">
+                                </picture>
+                                <div class="card-item__content">
+                                    <p class="card-item__licence"><%= item.licence_name%></p>
+                                    <h4 class="card-item__name">
+                                        <%= item.product_name %>
+                                    </h4>
+                                    <p class="card-item__price">$ <%= item.price %>
+                                    </p>
+                                    <p class="card-item__promo">
+                                        <%= item.dues %> CUOTAS SIN INTERÉS
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                    </li><!-- fin cuarta seccion primer articulo -->
+                    <% }) %>
+            </ul>
+        </div>
+    </main>
+    <div class="pagination"><!-- Inicia el indicador de paginas de shop -->
+        <button class="boton-atras">
+            < </button>
+                <a href="/home">1 </a>
+                <a href="/shop">2 </a>
+                <a href="/shop/item">... </a>
+                <a href="#">9 </a>
+                <a href="#">10 </a>
+                <button class="boton-sig"> > </button>
+    </div><!--fin el indicador de paginas de shop -->
+
+    <%- include('../partials/footer.ejs') %>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        </body>
+
+        </html>

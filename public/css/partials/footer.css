@@ -1,0 +1,18 @@
+footer nav {
+    display: flex;
+    flex-flow: row-reverse;
+    height: 274px;
+    align-items: center;
+    gap: 968px;
+}
+
+footer nav ul li {
+    padding-top: 7.5px;
+}
+
+footer p {
+    padding: 23px;
+    padding-left: 40%;
+    height: 66px;
+    width: 100%;
+}

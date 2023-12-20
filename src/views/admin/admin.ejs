@@ -1,0 +1,39 @@
+<%- include('../partials/header.ejs') %>
+
+    <main class="container">
+        <article class="buscarItem">
+            <img src=" /img/icons/search_icon.svg" alt="icono de búsqueda" class="tamañoImagen">
+            <input type="text" class="tipoCategoria" name="search" placeholder="código, nombre, categoría">
+        </article>
+        <article class="listProducto">
+            <h2 class="alinearItem">LISTADO DE PRODUCTOS</h2>
+            <h4 class="title_agregar"><a href="/admin/create">AGREGAR</h4>
+            <img class="img__mas" src="/img/icons/mdi_plus-box.svg" alt="simbolo + "></a>
+        </article>
+        <div style="margin-bottom: 30px;">
+            <ul>
+                <li class="tablaItems">
+                    <p class="tablaTitle">ID</p>
+                    <p class="tablaTitle">Código</p>
+                    <p class="tablaTitle">Nombre del Producto</p>
+                    <p class="tablaTitle">Categoría</p>
+                    <p class="tablaTitle"></p>
+                    <p class="tablaTitle"></p>
+                    <% data.forEach( item => { %>
+                        <p class="tablaContent"><%= item.product_id %></p>
+                        <p class="tablaContent"><%= item.sku %></p>
+                        <p class="tablaContent"><%= item.product_name %></p>
+                        <p class="tablaContent"><%= item.category_name %></p>
+                        <p class="img_pen"><a href="/admin/edit/<%= item.product_id %>"><img src="/img/icons/edit_pencil.svg" alt="icono de editar"></a></p>
+                        <p class="img_delete"><img src="/img/icons/delete_trash.svg" alt="icono de borrar"></td>
+                        </p>
+                    <% }); %>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <%- include('../partials/footerAdmin.ejs') %>
+</body>
+
+</html>

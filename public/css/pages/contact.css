@@ -1,0 +1,121 @@
+.contacto {
+    margin-left: var(--spacing-16);
+    margin-right: var(--spacing-16);
+}
+
+.tit_ppl {
+    font-family: var(--base-font);
+    margin: var(--spacing-16);
+    font-size: var(--font-xlarge);
+    font-weight: bold;
+    padding: var(--spacing-20);
+    text-align: center;
+}
+
+.cont {
+    width: 100%;
+    margin: auto;
+}
+
+.cont_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto .cont_flex {
+    padding: var(--spacing-16);
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+.colum_50 {
+    width: 49%;
+}
+
+.info_contacto {
+    height: 540px;
+    border-right: 2px solid;
+    border-bottom: none;
+}
+
+.tit_colum {
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    margin-top: var(--spacing-16);
+    margin-bottom: var(--spacing-8);
+    font-size: var(--font-large);
+}
+
+.descrip_colum {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    padding: var(--spacing-20);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-36);
+}
+
+.desc_colum {
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+    align-items: center;
+    padding-bottom: var(--spacing-8);
+    margin-bottom: var(--spacing-8);
+}
+
+.info_contacto [class*="icon_"] {
+    font-size: var(--font-small);
+    margin-right: var(--spacing-8);
+    position: relative;
+    top: 1px;
+    line-height: var(--spacing-24);
+}
+
+.form {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.form_label,
+.form_input_txt,
+.form_textarea {
+    display: block;
+    width: 100%;
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+}
+
+.form_input_txt {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form_textarea {
+    margin-top: 10px;
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.form_btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn_contact {
+    display: block;
+    text-align: center;
+    width: 195px;
+    margin: 10px auto;
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background .3s ease-in-out;
+}

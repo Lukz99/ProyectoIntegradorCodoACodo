@@ -1,0 +1,33 @@
+<%- include('../partials/header.ejs') %>
+    <main class="container">
+        <section class="contacto">
+            <h2 class="tit_ppl">Contactenos</h2>
+            <div class="cont cont_flex">
+                <div class="info_contacto colum colum_50">
+                    <h3 class="tit_colum">Informacion de contacto</h3>
+                    <p class="descrip_colum">Estamos para resolver todas sus dudas.</p>
+                    <p class="desc_colum"><iconify-icon class="icon_phone" icon="mingcute:phone-fill"></iconify-icon>Telefono: 1234-4567</p>
+                    <p class="desc_colum"><iconify-icon class="icon_ws" icon="uim:whatsapp"></iconify-icon>Whatsapp: +54-9-11-2345-6789</p>
+                    <p class="desc_colum"><iconify-icon class="icon_locacion" icon="circum:location-on"></iconify-icon>Calle Siempreviva 247 - Springfield</p>
+                    <p class="desc_colum"><iconify-icon class="icon_mail" icon="uiw:mail"></iconify-icon>contacto@funkoshop.com.ar</p>
+                </div>
+
+                <form action="enviar.php" method="post" class="form colum colum_50">
+                    <label for="" class="form_label">Nombre y Apellido</label>
+                    <input name="nombre" type="text" class="form_input_txt">
+                    <label for="" class="form_label">Correo electrónico</label>
+                    <input name="mail" type="mail" class="form_input_txt">
+                    <label for="" class="form_label">Teléfono</label>
+                    <input name="telefono" type="number" class="form_input_txt">
+                    <label for="" class="form_label">Mensaje</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="form_textarea"></textarea>
+                    <input type="submit" name="submit" value="Enviar" class="btn_contact form_btn">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

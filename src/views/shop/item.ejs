@@ -1,0 +1,37 @@
+<%- include('../partials/header.ejs') %>
+    <main class="container">
+        <ul class="lista-item"><!-- inicio item -->
+            
+            <li class="card-item__cover">
+                <img class="card-item__img--front" src="/img<%=item.image_front%> " alt="<%= item.product_description %>">
+                <img class="card-item__img--back" src="/img<%=item.image_back%>" alt="<%= item.product_description %>">
+            </li>
+            <li>
+                <h3 class="tituloStar"><%=item.licence_name%></h3>
+                <h4 class="babyYoda"><%= item.product_name %></h4>
+                <p class="descripYoda"><%= item.product_description %> </p>
+                <p class="descrip__price">$<%= item.price %></p>
+                <div class="cantItems">
+                    <button id="subtract" class="btn_Yoda1">-</button>
+                    <input type="text" class="inputYoda" name="quantity" id="quantity" placeholder="0">
+                    <button id="add" class="btn_Yoda1">+</button>
+                    <button class="add_cart">Agregar al Carrito</button>
+                </div>
+                <a href="" class="payment_methods">
+                    <p class="card-item__promo formas">Ver métodos de pago</p>
+                    <p class="card-item__promo cuotas">- <%= item.dues %> CUOTAS SIN INTERÉS</p>
+                </a>
+            </li>
+        </ul><!-- fin item -->
+        <%- include('../components/slider.ejs') %>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="../../js/item.js"></script>
+        <script src="../../js/glide.js"></script>
+        </body>
+
+        </html>

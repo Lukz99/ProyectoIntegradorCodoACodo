@@ -1,0 +1,120 @@
+.edit-header h2 {
+    font-family: var(--alternative-font);
+    margin-top: 35px;
+    font-size: 42px;
+    Width: 274px;
+    Height: 49px;
+}
+
+.formItem {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 44.29px;
+    align-items: center;
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+.formItem form label {
+    font-family: var(--base-font);
+    width: 300px;
+    font-size: var(--font-large);
+    line-height: 29.05px;
+    letter-spacing: 4%;
+}
+
+.formItem form select {
+    width: 243.034px;
+    height: 44.285px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+}
+
+.catalogoItem {
+    font-family: var(--base-font);
+    width: 300px;
+    font-size: var(--font-large);
+    line-height: 29.05px;
+    letter-spacing: 4%;
+    padding-right: 10px;
+}
+
+.catalogoItemOk {
+    font-family: var(--base-font);
+    width: 300px;
+    font-size: var(--font-medium);
+    color: var(--dark-solid);
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.caracteProduc {
+    width: 1012.057px;
+    height: 194.833px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--dark-solid);
+    margin-top: 36px;
+    padding-top: 11.4px;
+    padding-left: 9.96px;
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+.cataLog {
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    color: var(--dark-solid);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.selectCuotas {
+    width: 346.034px;
+    height: 44.285px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+}
+
+.itemParaAgregar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24.22px;
+    justify-content: center;
+    max-width: 324.22px;
+    margin-top: 28px;
+    margin-bottom: 58px;
+}
+
+.descripIman {
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 30%;
+    width: 61px;
+    height: 23px;
+}

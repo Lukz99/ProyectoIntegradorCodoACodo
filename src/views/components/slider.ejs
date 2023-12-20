@@ -1,0 +1,34 @@
+<section class="slider container glide "><!-- inicio cuarta seccion -->
+    <h2 class="slider__title">Últimos lanzamientos</h2>
+    <div class="glide__track" data-glide-el="track">
+        <ul class="slider__items glide__slides">
+            <% data.forEach( item => { %>
+            <li class="slider__item glide__slide "><!-- inicio cuarta seccion primer articulo -->          
+                <article>
+                    <a class="card-item__link" href="/shop/item/<%= item.product_id %>">
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">NUEVO</span>
+                            <img class="card-item__img--front" src="/img<%= item.image_front %>"
+                                alt="figura coleccionable funko star wars trooper">
+                            <img class="card-item__img--back" src="/img<%= item.image_back %>"
+                                alt="figura coleccionable funko star wars trooper box">
+                        </picture>
+                        <div class="card-item__content">
+                            <p class="card-item__licence"><%= item.licence_name %></p>
+                            <h4 class="card-item__name"><%= item.product_name %></h4>
+                            <p class="card-item__price">$ <%= item.price %></p>
+                            <p class="card-item__promo"><%= item.dues %> CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </a>
+                </article>
+            </li><!-- fin cuarta seccion primer articulo -->
+            <% }) %>
+        </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon
+                icon="ic:round-chevron-left"></iconify-icon></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon
+                icon="ic:round-chevron-right"></iconify-icon></button>
+    </div>
+</section>

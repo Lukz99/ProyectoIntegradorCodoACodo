@@ -1,0 +1,108 @@
+.lista-item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-family: var(--base-font);
+  justify-content: center;
+  margin: 40px;
+  gap: 30px;
+}
+
+.prod-rel {
+  font-size: var(--font-display);
+  margin: 20px;
+  padding: 20px;
+}
+
+.tituloStar {
+  color: var(--dark-bg-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: var(--spacing-12);
+}
+
+.babyYoda {
+  color: var(--dark-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-jumbo);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: var(--spacing-16);
+}
+
+.descrip__price {
+  color: var(--dark-bg-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-jumbo);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: var(--spacing-16);
+}
+
+.descripYoda {
+  color: var(--dark-bg-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-large);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: var(--spacing-16);
+}
+
+.inputYoda {
+  max-width: 105.467px;
+  height: 35.241px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: center;
+  border: 0.5px solid var(--gray);
+  text-align: center;
+  font-size: var(--font-large);
+}
+
+.btn_Yoda1 {
+  display: flex;
+  width: var(--spacing-36);
+  height: var(--spacing-36);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-large);
+  color: var(--light-font-solid);
+  background: #4F4F4F;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: center;
+}
+
+.add_cart{
+  width: 180px;
+  height: var(--spacing-36);
+  border: none;
+  border-radius: 0%;
+  background-color: var(--primary-solid);
+  color: var(--light-bg-solid);
+  outline: none;
+}
+
+.cantItems {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 16px;
+  height: 37.9px;
+  margin-bottom: 29.7px;
+}
+
+.payment_methods {
+display: flex;
+}
+
+.formas {
+  text-decoration: underline;
+  padding-right: 5px;
+}

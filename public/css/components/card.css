@@ -1,0 +1,32 @@
+.img-card-wars {
+    position: relative;
+    background-image: url(../../img/star-wars/trooper-1.webp);
+    background-size:  contain;
+    width: 359px;
+    height: 352px;
+}
+
+.img-card-pokemon {
+    
+    background-image: url(../../img/pokemon/pidgeotto-1.webp);
+    position: relative;
+    background-size: contain;
+    width: 359px;
+    height: 352px;
+}
+
+.img-card-potter {
+    background-image: url(../../img/harry-potter/luna-1.webp);
+    position: relative;
+    background-size: contain;
+    width: 359px;
+    height: 352px;
+}
+
+.img-card-yoda {
+    background-image: url(../../img/star-wars/baby-yoda-1.webp);
+    position: relative;
+    background-size: contain;
+    width: 550px;
+    height: 550px;
+}

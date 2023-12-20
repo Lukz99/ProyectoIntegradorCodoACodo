@@ -1,0 +1,98 @@
+.login-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 400px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+
+.login-header {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1.68px;
+}
+
+.datos {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+}
+
+.ingresar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.pass1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pass2 {
+    text-align: center;
+}
+
+.text {
+    display:block;
+}
+
+.write {
+    font-size: 20px;
+}
+
+.complete {
+    border-style: solid;
+    width: 160px;
+    border-width: 0px 0px 2px;
+    border-color: #FF3333;
+    padding-bottom: 6px;
+    color: var(--dark-bg-solid);
+    font-family: var(--base-font);
+}
+
+#pwd::placeholder {
+    padding-bottom: 13px;
+    background-image: url(../../img/icons/Group\ 95.svg);
+    background-size: 170px; 
+    background-repeat: no-repeat; /* Hace que no se repita el fondo dentro del placeholder*/
+    background-position: left;/*  Alinea el icono a la izquierda y al centro del campo de entrada */
+}
+
+::placeholder {
+    color: var(--gray);
+}
+
+.boton {
+    border: none;
+    border-radius: 0%;
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    outline: none;
+    height: 40px;
+    width: 100px;
+}
+
+.rec {
+    height: 40px;
+    line-height: 40px;
+    font-size: small;    
+}
+
+.forgot {
+    color: var(--secondary-solid);
+    font-size: 7px;
+}

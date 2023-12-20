@@ -1,0 +1,38 @@
+/* botones */
+/* boton fondo blanco letras negras */
+.boton-shop {
+    cursor: pointer;
+    display: inline-block;
+    width: 211px;
+    height: 47px;
+    border-radius: 50px;
+    background: var(--light-font-solid);
+    color: var(--dark-solid);
+}
+
+/* boton fondo gris oscuro letras blancas */
+.boton-shop1 {
+    cursor: pointer;
+    display: inline-block;
+    width: 291.8px;
+    height: 65px;
+    border-radius: 50px;
+    background: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-size: 24px;
+}
+
+/* boton fondo ROJO letras blancas */
+.boton-nuevo {
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: inline-block;
+    width: 96.127px;
+    height: 30px;
+    background: var(--primary-solid);
+    border: var(--primary-solid);
+    color: var(--light-font-solid);
+    
+}

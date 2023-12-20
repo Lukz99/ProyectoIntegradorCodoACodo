@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkoshop | Login</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="icon" href="../../img/branding/isotype.svg">
+</head>
+
+<body>
+    <header><!-- inicio header -->
+        <nav class="container navbar">
+            <picture class="navbar__logo">
+                <a href="../../index.html"><img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a class="navbar__link" href="../../pages/shop/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item"> <a class="navbar__link" href="../admin/admin.html">ADMIN</a></li>
+                <li class="navbar__item"> <a class="navbar__link" href="../../index.html">SALIR</a></li>
+            </ul>
+        </nav>
+    </header><!-- fin header -->
+
+    <main class="login-all"><!-- inicio cuerpo principal -->
+        <div class="login">
+            <span class="login-box">
+                <section><!-- Inicio de primera fila -->
+                    <span class="login-header">
+                        <h1>INGRESAR A MI CUENTA</h1>
+                    </span>
+                </section><!-- fin de la primera fila -->
+
+                <div class="datos"><!-- INGRESO DATOS -->
+                    <section><!-- EMAIL -->
+                        <form class="email" action="#">
+                            <label class="write" for="email">Email:</label>
+                            <div>
+                                <input class="complete" type="text" placeholder="ejemplo@correo.com">
+                            </div>
+                        </form>
+                    </section><!-- fin de la EMAIL -->
+
+                    <section><!-- PASSWORD -->
+                        <form class="pass1" action="#">
+                            <label class="write" for="pwd">Contraseña:</label>
+                            <input class="complete" type="password" id="pwd" name="pwd" placeholder=" ">
+                        </form>
+                    </section><!-- fin de PASSWORD -->
+                </div>
+
+                <section class="ingresar"><!-- inicio de la cuarta fila -->
+                    <input class="boton" type="submit" value="Ingresar">
+                    <div class="rec">
+                        <form action="#">
+                            <input type="checkbox" id="recordar" name="recordar" value="recordarme">
+                            <label for="recordar"> Recordarme</label><br>
+                        </form>
+                    </div>
+                </section><!-- fin de la cuarta fila --> 
+
+                <section class="forgot"><!-- inicio de la quinto fila -->
+                    <a class="pass2" href="#">
+                        <div>Olvidé mi contraseña</div>
+                    </a>
+                </section><!-- fin de la quinto fila -->
+            </span>
+        </div>
+    </main><!-- fin cuerpo principal -->
+
+    <footer><!-- inicio footer seccion -->
+        <nav class="container">
+            <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
+            <ul>
+                <li><a href="../../pages/shop/shop.html">SHOP</a></li>
+                <li><a href="../../pages/admin/register.html">REGISTRARSE</a></li>
+                <li><a href="../../pages/admin/login.html">INGRESAR</a></li>
+                <li><a href="../../pages/shop/contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <p style="font-size: 20px;">All rights reserved 2023 - Funkoshop &copy</p>
+    </footer><!-- fin footer seccion -->
+</body>
+</html>

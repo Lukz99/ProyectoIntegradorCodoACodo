@@ -1,0 +1,120 @@
+.create_header {
+    width: 430px;
+    height: 50px;
+}
+
+.create_title {
+    margin-top: var(--spacing-36);
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+.first_filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-36);
+    width: 828px;
+}
+
+.filter {
+    align-items: center;
+}
+
+.filter_title {
+    color: var(--dark-solid);
+    text-align: right;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    margin-right: var(--spacing-12);
+}
+
+.filter_dropdown {
+    width: 243px;
+    height: 44px;
+    border-radius: 6px;
+    color: var(--grey-font-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    padding: var(--spacing-8);
+}
+
+.complete_title {
+    color: var(--dark-solid);
+    text-align: right;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+}
+
+.to_finish {
+    margin-top: var(--spacing-36);
+    padding: 5px;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 400;
+    margin-left: var(--spacing-12);
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+}
+
+.margen_large {
+    width: 285px;
+}
+
+.margen_medium {
+    width: 130px;
+    margin-right: var(--spacing-36);
+}
+
+.margen_small {
+    width: 55px;
+    text-align: center;
+    margin-right: var(--spacing-16);
+}
+
+.product_descrip {
+    margin-top: var(--spacing-36);
+    width: 829px;
+    padding: var(--spacing-12);
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.way_to_pay {
+    width: 346px;
+    height: 44px;
+    border-radius: 6px;
+    padding: var(--spacing-8);
+    color: var(--grey-font-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 500;
+    margin-left: var(--spacing-12);
+}
+
+.upload_image {
+    margin-top: var(--spacing-48);
+    align-items: center;
+}
+
+.files_button {
+    margin-left: var(--spacing-8);
+}
+
+.action_btn {
+    margin: var(--spacing-36) 0;
+    margin-right: var(--spacing-36);
+    border: none;
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    outline: none;
+    width: 175px;
+    height: 45px;
+}

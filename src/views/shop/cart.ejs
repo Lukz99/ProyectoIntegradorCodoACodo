@@ -1,0 +1,113 @@
+<%- include('../partials/header.ejs') %>
+
+    <main class="container mainCart"><!-- INICIO MAIN -->
+        <section class="titles"><!-- inicio TITULOS-->
+            <h1 class="title">CARRITO DE COMPRAS</h1>
+            <div class="cart_titles border_style">
+                <h2>DETALLE DE PRODUCTO</h2>
+                    <h2>CANTIDAD</h2>
+                        <h2>TOTAL</h2>
+            </div>
+        </section>
+
+        <section class="cart_item border_style"><!-- inicio PRODUCTO 1 -->
+            <article class="item_description">
+                <picture class="item_img">
+                    <img src="../../img/star-wars/baby-yoda-1.webp" class="item_img"
+                        alt="Figura Funko Pop Grogu - The Mandalorian">
+                </picture>
+                <div class="item_titles">
+                    <div class="item_texts">
+                        <h5 class="name_item">BABY YODA BLUEBALL</h5>
+                        <h3 class="saga_item">STAR WARS</h3>
+                        <br>
+                        <p class="price_item">precio: $1799,99</p>
+                    </div>
+                </div>
+            </article>
+            <article class="item_cant">
+                <div class="btns">
+                    <div class="item_quant">
+                        <p class="text_quant">2</p>
+                    </div>
+                    <div class="btns_cant">
+                        <button class="btn_btn">
+                            <p class="text_btn">+</p>
+                        </button>
+                        <button class="btn_btn">
+                            <p class="text_btn">-</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="price_quant">$3599,98</p>
+                <span class="btn_delete">
+                    <img src="../../img/icons/delete_trash.svg" alt="icono de borrar" class="img_delete">
+                </span>
+            </article>
+        </section>
+
+        <section class="cart_item border_style"><!-- inicio PRODUCTO 2 -->
+            <article class="item_description">
+                <picture class="item_img">
+                    <img src="../../img/pokemon/pidgeotto-1.webp" class="item_img" alt="Figura Funko Pop pidgeotto">
+                </picture>
+                <div class="item_titles">
+                    <div class="item_texts">
+                        <h5 class="name_item">PIDGEOTTO</h5>
+                        <h3 class="saga_item">POKEMON</h3>
+                    </div>
+                    <p class="price_item">precio: $1799,99</p>
+                </div>
+            </article>
+            <article class="item_cant">
+                <div class="btns">
+                    <div class="item_quant">
+                        <p class="text_quant">1</p>
+                    </div>
+                    <div class="btns_cant">
+                        <button class="btn_btn">
+                            <p class="text_btn">+</p>
+                        </button>
+                        <button class="btn_btn">
+                            <p class="text_btn">-</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="price_quant">$1799,99</p>
+                <span class="btn_delete">
+                    <img src="../../img/icons/delete_trash.svg" alt="icono de borrar" class="img_delete">
+                </span>
+            </article>
+        </section>
+
+        <section class="summary"><!-- inicio de RESUMEN-->
+            <h1 class="title summary_title">RESUMEN</h1>
+            <div class="summary_block border_style">
+                <ul class="summary_box">
+                    <li class="summary_line">
+                        <h6 class="summary_subtitles">CANTIDAD DE ELEMENTOS</h6>
+                        <p class="summary_subtotal">3</p>
+                    </li>
+                    <li class="summary_line">
+                        <h6 class="summary_subtitles">SUBTOTAL</h6>
+                        <p class="summary_subtotal">$ 5.399,97</p>
+                    </li>
+                    <li class="summary_line">
+                        <h6 class="summary_subtitles">ENVIO</h6>
+                        <p class="summary_subtotal">$ 0,00</p>
+                    </li>
+                    <li class="summary_line line_totals">
+                        <h5 class="summary_final">TOTAL</h5>
+                        <p class="total_final">$ 5.399,97</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn_pay">IR A PAGAR</button>
+        </section>
+    </main><!-- FIN MAIN -->
+
+    <%- include('../partials/footer.ejs') %>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+        </body>
+
+        </html>

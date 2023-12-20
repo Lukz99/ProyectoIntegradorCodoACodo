@@ -1,0 +1,85 @@
+.buscarItem {
+    display: flex;
+    flex-flow: row;
+    max-width: 1100px;
+    height: 42px;
+    margin-top: 36px;
+    margin-bottom: 37px;
+    gap: 19.8px;
+}
+
+.alinearItem {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+}
+
+.title_agregar {
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+}
+
+.img__mas {
+    width: 52px;
+    height: 52px;
+}
+
+.tamañoImagen {
+    flex-basis: 42px;
+}
+
+.tipoCategoria {
+    flex-basis: 529.765px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    padding-left: 20px;
+}
+
+.listProducto {
+    display: grid;
+    max-width: 1100px;
+    grid-template-columns: 15fr 1fr 1fr;
+    gap: 5px;
+    height: 42px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 34px;
+}
+
+.img_pen {
+    width: 32px;
+}
+
+.img_delete {
+    width: 34px;
+}
+
+.tablaItems {
+    display: grid;
+    max-width: 1100px;
+    margin-left: 20px;
+    grid-template-columns: 1fr 3fr 5fr 3fr 1fr 1fr;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 40px;
+   
+}
+
+.tablaTitle{
+    color: var(--dark-solid);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+.tablaContent {
+    color: var(--dark-solid);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}

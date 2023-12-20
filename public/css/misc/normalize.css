@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+    
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+
+}
+
+img {
+    height: 100%;
+    
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+section article p {
+    font-size: var(--font-medium);
+    padding-top: 5px;
+    width: 458px;
+}

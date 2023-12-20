@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funkoshop | Create</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="icon" href="../../img/branding/isotype.svg">
+</head>
+
+<body>
+    <header><!-- inicio header -->
+        <nav class="container navbar">
+            <picture class="navbar__logo">
+                <a href="../../index.html"><img src="../../img/branding/logo_light_horizontal.svg"alt="Isologotipo de la marca funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a class="navbar__link" href="../../pages/shop/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item"> <a class="navbar__link" href="../admin/admin.html">ADMIN</a></li>
+                <li class="navbar__item"> <a class="navbar__link" href="../../index.html">SALIR</a></li>
+            </ul>
+        </nav>
+    </header><!-- fin header -->
+
+    <main class="container"><!-- inicio cuerpo principal -->
+        <section class="create_header"><!-- Inicio primer fila -->
+            <h2 class="create_title">CREAR NUEVO ITEM</h2>
+        </section>
+
+        <section class="first_filter"><!-- inicio de la segunda fila -->
+            <form action="#" class="filters">
+                <label for="categoria" class="filter_title">Categoría:</label>
+                <select id="categoria" name="categoria" class="filter_dropdown">
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+            <form action="#" class="filters">
+                <label for="Licencia" class="filter_title">Licencia:</label>
+                <select id="Licencia" name="Licencia" class="filter_dropdown">
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+        </section>
+
+        <section><!-- inicio de la tercera fila -->
+            <form class="new_product" action="#">
+                <label for="nombre del producto" class="complete_title">Nombre del producto:</label>
+                <input type="text" name="producto" placeholder="Kakashi Hatake Shippuden Saga"
+                    class="to_finish margen_large" />
+            </form>
+            <textarea name="comentario" rows="10" cols="40" placeholder="Descripción de producto"
+                class="product_descrip"></textarea>
+            <form action="#">
+                <label for="sku" class="complete_title">SKU:</label>
+                <input type="text" name="sku" placeholder="SSK111AB001" class="to_finish margen_medium" />
+                <label for="precio" class="complete_title">Precio:</label>
+                <input type="text" name="precio" placeholder="$ 0.000,00" class="to_finish margen_medium" />
+                <label for="stock:" class="complete_title">Stock:</label>
+                <input type="text" name="stock:" placeholder="0" class="to_finish margen_small" />
+            </form>
+            <form action="#">
+                <label for="descuento" class="complete_title">Descuento:</label>
+                <input type="text" name="descuento" placeholder="0%" class="to_finish margen_small" />
+                <label for="cuotas" class="complete_title">Cuotas:</label>
+                <select id="cuotas" name="Cuotas" class="way_to_pay">
+                    <option value="#">3 Cuotas sin interés</option>
+                    <option value="#">6 Cuotas sin interés</option>
+                    <option value="#">Ahora 12</option>
+                </select>
+            </form>
+            <form action="#" class="upload_image">
+                <label for="imagen" class="complete_title">Imágenes:</label>
+                <input type="file" id="imagen" name="imagen" class="files_button" multiple />
+            </form>
+        </section>
+
+        <section class="btn_add_clean"><!-- inicio de la octavo fila -->
+            <input type="submit" value="Agregar Producto" class="action_btn" />
+            <input type="reset" value="Limpiar" class="action_btn" />
+        </section>
+    </main><!--fin cuerpo principal-->
+
+    <footer><!--inicio footer seccion -->
+        <nav class="container">
+            <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com" />
+            <ul>
+                <li><a href="../../pages/shop/shop.html">SHOP</a></li>
+                <li><a href="../../pages/admin/register.html">REGISTRARSE</a></li>
+                <!--hay que corregir esta linea, que hace que se corra todo el UL fuera del CONTAINER-->
+                <li><a href="../../pages/admin/login.html">INGRESAR</a></li>
+                <li><a href="../../pages/shop/contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <p style="font-size: 20px">All rights reserved 2023 - Funkoshop &copy</p>
+    </footer><!-- fin footer seccion -->
+</body>
+</html>

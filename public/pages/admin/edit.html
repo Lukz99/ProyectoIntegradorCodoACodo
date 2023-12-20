@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkoshop | Edit</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="icon" href="../../img/branding/isotype.svg">
+</head>
+
+<body>
+    <header><!-- inicio header -->
+        <nav class="container navbar">
+            <picture class="navbar__logo">
+                <a href="../../index.html"><img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a class="navbar__link" href="../../pages/shop/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item"> <a class="navbar__link" href="../admin/admin.html">ADMIN</a></li>
+                <li class="navbar__item"> <a class="navbar__link" href="../../index.html">SALIR</a></li>
+            </ul>
+        </nav>
+    </header><!-- fin header -->
+
+    <main class="container"><!-- inicio cuerpo principal -->
+        <section><!-- Inicio de primera fila -->
+            <span class="edit-header">
+                <h2>EDITAR ITEM</h2>
+            </span>
+        </section><!-- fin de la primera fila -->
+
+        <section class="formItem"><!-- inicio de la segunda fila -->
+            <form action="#">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="#">Figuras</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+            <form action="#">
+                <label for="Licencia">Licencia:</label>
+                <select id="Licencia" name="Licencia">
+                    <option value="#">Naruto Shippuden</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+        </section><!-- fin de la segunda fila -->
+
+        <section><!-- inicio de la tercera fila -->
+            <form action="#">
+                <label for="nombre del producto" class="catalogoItem">Nombre del producto:</label>
+                <input class="catalogoItemOk" type="text" name="producto" value="Kakashi Hatake Shippuden Saga">
+            </form>
+        </section><!-- fin de la tercera fila -->
+
+        <section><!-- inicio de la cuarta fila -->
+            <textarea class="caracteProduc" name="comentario" rows="10" cols="40">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  </textarea>
+        </section><!-- fin de la cuarta fila -->
+
+        <section style="margin-top: 19px"><!-- inicio de la quinto fila -->
+            <form action="#">
+                <label class="catalogoItem" for="sku">SKU:</label>
+                <input class="cataLog" style="max-width: 130px" type="text" name="sku" value="NAR001012">
+                <label class="catalogoItem" style="margin-left: 56.48px" for="precio">Precio:</label>
+                <input class="cataLog" style="max-width: 130px" type="text" name="precio" value="$ 1.799,00">
+                <label class="catalogoItem" style="margin-left: 56.48px" for="stock:">Stock:</label>
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:" value="10">
+            </form>
+        </section><!-- fin de la quinto fila -->
+
+        <section style="margin-top: 51.58px; margin-bottom: 51.58px;"><!-- inicio de la sexta fila -->
+            <form action="#">
+                <label class="catalogoItem" for="descuento">Descuento:</label>
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento" value="10%">
+                <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
+                <select class="selectCuotas" id="cuotas" name="Licencia">
+                    <option value="#">6 Cuotas sin interés</option>
+                    <option value="#">seleccionar</option>
+                    <option value="#">seleccionar</option>
+                </select>
+            </form>
+        </section><!-- fin de la sexta fila -->
+
+        <section><!-- inicio de la septimo fila -->
+            <form action="#">
+                <label class="catalogoItem" for="imagen">Imágenes:</label>
+                <input type="file" id="imagen" name="imagen" multiple>
+            </form>
+            <section class="itemParaAgregar">
+                <article>
+                    <img class="item_img_edit" src="../../img/naruko/Naruto-Shippuden-Young-konoha-aldea-figura.png"
+                        alt="Figura de funkos de naruko de frente">
+                    <p class="descripIman">Frente</p>
+                </article>
+                <article>
+                    <img class="item_img_edit" src="../../img/naruko/Naruto-Shippuden-Young-konoha-aldea-figura-box.jpg" alt="Figura de funkos de naruko de dorso">
+                    <p class="descripIman">Dorso</p>
+                </article>
+            </section>
+        </section><!-- fin de la septimo fila -->
+
+        <section><!-- inicio de la octavo fila -->
+            <input class="boton" style="width: 175px;height: 44.334px; margin-bottom: 36px;" type="submit" value="Modificar Producto">
+        </section><!-- fin de la octavo fila -->
+    </main><!-- fin cuerpo principal -->
+
+    <footer><!-- inicio footer seccion -->
+        <nav class="container">
+            <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funco.com">
+            <ul>
+                <li><a href="../../pages/shop/shop.html">SHOP</a></li>
+                <li><a href="../../pages/admin/register.html">REGISTRARSE</a></li>
+                <li><a href="../../pages/admin/login.html">INGRESAR</a></li>
+                <li><a href="../../pages/shop/contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <p style="font-size: 20px;">All rights reserved 2023 - Funkoshop &copy</p>
+    </footer><!-- fin footer seccion -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* Configuración main de tienda flex box horizontal de izq a der*/
+.texto-ima {
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-family: var(--alternative-font)
+}
+
+/* configuración de las dos columnas de aside e items del shop */
+.texto-imaBusqueda {
+    display: grid;
+    grid-template-columns: 243px 960px;
+    margin-top: 68px;
+
+
+
+}
+
+.texto-imaBusqueda aside {
+    grid-column: 1 / 2;
+
+}
+
+
+
+.texto-imaBusqueda div {
+    grid-column: 2 / 3;
+    margin-left: 10px;
+}
+
+
+/* Configuración main de tienda flex box horizontal de der a izq*/
+.texto-ima-rev {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    font-family: var(--alternative-font);
+}
+
+/* Configuración  flex box de items horizontal de tres izq a der*/
+.texto-ima-3 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 71px;
+    margin-top: 57px;
+    margin-bottom: 68px;
+    font-family: var(--base-font);
+}

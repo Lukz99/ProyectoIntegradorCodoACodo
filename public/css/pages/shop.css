@@ -1,0 +1,175 @@
+.texto-ima-3-pequeño-shop {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-family: var(--base-font);
+    gap: 36px 24px;
+}
+
+.texto-ima-3-pequeño-shop li {
+    width: 304.008px;
+    height: 512px;
+}
+
+/* dar formato a los numeros de pie de pagina */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.pagination a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 5px 4px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: var(--font-small);
+}
+
+.pagination a:first-of-type {
+    opacity: 0.5;
+    background: #919EAB;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pagination a:nth-child(2) {
+    color: var(--primary-solid);
+    border: 1px solid var(--primary-solid);
+    background: var(--light-font-solid);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pagination a:nth-child(n+3) {
+    color: #212B36;
+    border: 1px solid #dfe3e8d8;
+    background: var(--light-font-solid);
+}
+
+.buscar {
+    width: 243px;
+    text-transform: uppercase;
+    float: left;
+    font-size: var(--font-large);
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.boton-atras {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 8px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.boton-sig {
+    width: 44px;
+    height: 44px;
+    color: #615c5c9e;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    margin-left: 3px;
+}
+
+aside section div p {
+    font-family: Inter;
+    font-size: 24px;
+}
+
+#buscarItem {
+    width: 233.034px;
+    height: 44.285px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 28px;
+}
+
+.texto-imaBusqueda aside section div form select:nth-child(1) {
+    width: 233.034px;
+    height: 44.285px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 28px;
+}
+
+.mayMenor {
+    font-size: small;
+    width: 243px;
+    height: 44.285px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+
+.mayMenor input {
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid);
+    text-align: center;
+    height: 27.5px;
+    width: 59.1px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filtroProducto {
+    flex-flow: row;
+    align-items: center;
+    margin-top: 16px;
+    position: relative;
+}
+
+.filtroProducto li input {
+    position: absolute;
+    left: 10px;
+    font-size: small;
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.filtroProducto li label {
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+    font-size: medium;
+}
+
+select {
+    background-image: url(../../img/icons/material-symbols_arrow-drop-down-rounded.svg);
+    /*aquí deberás escribir la ruta de la imagen que utilizarás como flecha del desplegable*/
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    color: #919EAB;
+}
+
+select::-ms-expand {
+    display: none;
+    /*Evita que se muestre la flecha por defecto en versiones de IE*/
+}

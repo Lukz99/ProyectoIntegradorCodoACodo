@@ -1,0 +1,104 @@
+<%- include('../partials/header.ejs') %>
+
+    <main class="container"><!-- inicio cuerpo principal -->
+        <section><!-- Inicio de primera fila -->
+            <span class="edit-header">
+                <h2>EDITAR ITEM</h2>
+            </span>
+        </section><!-- fin de la primera fila -->
+
+        <section class="formItem"><!-- inicio de la segunda fila -->
+            <form action="/admin/edit" method="post" enctype="application/x-www-form-urlencoded">
+                <label for="collection">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    if (<%= item.category_id %>)
+                        <option value="<%= item.category_id %>" disabled selected hidden>
+                            <%= item.category_name %>
+                        </option>
+                </select>
+            </form>
+            <form action="#">
+                <label for="Licencia">Licencia:</label>
+                <select id="licence" name="categoria">
+                    if (<%= item.licence_id %>)
+                        <option value="<%= item.licence_id %>" disabled selected hidden>
+                            <%= item.licence_name %>
+                        </option>
+                </select>
+               
+            </form>
+        </section><!-- fin de la segunda fila -->
+
+        <section><!-- inicio de la tercera fila -->
+            <form action="#">
+                <label for="nombre del producto" class="catalogoItem">Nombre del producto:</label>
+                <input class="catalogoItemOk" type="text" name="producto" value="<%= item.product_name %>">
+            </form>
+        </section><!-- fin de la tercera fila -->
+
+        <section><!-- inicio de la cuarta fila -->
+            <textarea class="caracteProduc" name="comentario" rows="10"
+                cols="40"><%= item.product_description %> </textarea>
+        </section><!-- fin de la cuarta fila -->
+
+        <section style="margin-top: 19px"><!-- inicio de la quinto fila -->
+            <form action="#">
+                <label class="catalogoItem" for="sku">SKU:</label>
+                <input class="cataLog" style="max-width: 130px" type="text" name="sku" value="<%= item.sku %>">
+                <label class="catalogoItem" style="margin-left: 56.48px" for="precio">Precio:</label>
+                <input class="cataLog" style="max-width: 130px" type="text" name="precio" value="$<%= item.price %>">
+                <label class="catalogoItem" style="margin-left: 56.48px" for="stock:">Stock:</label>
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:"
+                    value="<%= item.stock %>">
+            </form>
+        </section><!-- fin de la quinto fila -->
+
+        <section style="margin-top: 51.58px; margin-bottom: 51.58px;"><!-- inicio de la sexta fila -->
+            <form action="#">
+                <label class="catalogoItem" for="descuento">Descuento:</label>
+                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento"
+                    value="<%= item.discount %>%">
+                <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
+                <select class="way_to_pay" id="cuotas" name="dues">
+                    <option value="0">Sin cuotas</option>
+                        if (<%= item.dues %>)
+                            <option value="<%=item.dues%>" disabled selected hidden>
+                                <%= item.dues %> cuotas sin interés
+                            </option>
+                    
+                    <option value="3">3 cuotas sin interés</option>
+                    <option value="6">6 cuotas sin interés</option>
+                    <option value="9">9 cuotas sin interés</option>
+                    <option value="12">12 cuotas sin interés</option>
+                </select>
+            </form>
+        </section><!-- fin de la sexta fila -->
+
+        <section><!-- inicio de la septima fila -->
+            <form action="#">
+                <label class="catalogoItem" for="imagen">Imágenes:</label>
+                <input type="file" id="imagen" name="imagen" multiple>
+            </form>
+            <section class="itemParaAgregar">
+                <article>
+                    <img class="item_img_edit" src="/img<%= item.image_front %>"
+                        alt="Figura de frente">
+                    <p class="descripIman">Frente</p>
+                </article>
+                <article>
+                    <img class="item_img_edit" src="/img<%= item.image_back %>" alt="Dorso de la figura">
+                    <p class="descripIman">Dorso</p>
+                </article>
+            </section>
+        </section><!-- fin de la septima fila -->
+
+        <section><!-- inicio de la octava fila -->
+            <input class="boton" style="width: 175px;height: 44.334px; margin-bottom: 36px;" type="submit"
+                value="Modificar Producto">
+        </section><!-- fin de la octava fila -->
+    </main><!-- fin cuerpo principal -->
+
+    <%- include('../partials/footerAdmin.ejs') %>
+        </body>
+
+        </html>
