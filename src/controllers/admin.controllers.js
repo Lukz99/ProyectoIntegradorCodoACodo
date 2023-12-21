@@ -1,5 +1,5 @@
 const path = require('path');
-const { getAll, getOne, create } = require('../models/product.model');
+const { getAll, getOne, create, deleteOne } = require('../models/product.model');
 
 const adminControllers = {
     admin: async (req, res) => {
@@ -8,12 +8,14 @@ const adminControllers = {
             title: "Admin",
             data,
         });},
+
     createView: async (req, res) => {
         const data = await getAll();
         res.render(path.resolve(__dirname,'../views/admin/create.ejs'),{
             title: "Crear item",
             data
         });},
+
     createItem: async (req, res) => {
         console.log(req.body)
         console.log(req.files)
@@ -27,9 +29,12 @@ const adminControllers = {
             stock: Number(req.body.stock),
             discount: Number(req.body.descuento),
             dues: Number(req.body.cuotas),
-            image_front: '/products/'+req.files[0].originalname, 
-            image_back: '/products/'+req.files[1].originalname,
+            image_front: '/products/'+req.files[0].filename, 
+            image_back: '/products/'+req.files[1].filename,
         }
+
+        await create([Object.values(product_schema)]);
+
         res.redirect('/admin');
         // TODO - MANEJO DE ERROR
         /*const result = await create([Object.values(product_schema)]);
@@ -37,6 +42,7 @@ const adminControllers = {
         res.send('Esta es la ruta para agregar un item: ' + result);
         */
     },
+
     editView: async (req, res) =>  {
         const { id } = req.params;
         
@@ -48,13 +54,14 @@ const adminControllers = {
         
     
     },
-    editItem: (req, res) => res.send('esta es la vista para realizar la modificacion'),
-    deleteItem: (req, res) => res.send('Esta es la vista para eliminar item'),
 
-    // (req, res) => {
-    //     const { id } = req.params;
-    
-    //     res.send(`Usted quiere eliminar su item: ${id}`)}),
+    editItem: (req, res) => res.send('esta es la vista para realizar la modificacion'),
+
+    deleteItem: async (req, res) => {
+        const { id } = req.params;
+        const deleted = await deleteOne({product_id: id});
+        res.redirect('/admin');
+    }
 }
 
 module.exports = adminControllers

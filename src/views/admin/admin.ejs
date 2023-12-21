@@ -25,8 +25,15 @@
                         <p class="tablaContent"><%= item.product_name %></p>
                         <p class="tablaContent"><%= item.category_name %></p>
                         <p class="img_pen"><a href="/admin/edit/<%= item.product_id %>"><img src="/img/icons/edit_pencil.svg" alt="icono de editar"></a></p>
-                        <p class="img_delete"><img src="/img/icons/delete_trash.svg" alt="icono de borrar"></td>
-                        </p>
+                        <span class="img_delete">
+                            <form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded">
+                            
+                                <button type="submit">
+                                    <img src="/img/icons/delete_trash.svg" alt="icono de borrar">
+                                </button>
+                            
+                            </form>
+                        </span>
                     <% }); %>
                 </li>
             </ul>

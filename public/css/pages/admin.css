@@ -50,6 +50,7 @@
 }
 
 .img_delete {
+    display: inline-block;
     width: 34px;
 }
 

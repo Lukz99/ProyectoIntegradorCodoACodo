@@ -9,6 +9,6 @@ router.get('/create', createView);
 router.post('/create', upload.array('imagen', 2), createItem);
 router.get('/edit/:id', editView);
 router.put('/edit/:id', editItem);
-router.delete('delete/:id', deleteItem);
+router.delete('/delete/:id', deleteItem);
 
 module.exports = router;

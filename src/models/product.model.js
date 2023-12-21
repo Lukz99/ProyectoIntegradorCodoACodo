@@ -55,13 +55,27 @@ const create = async (params) => {
          error: true,
          message: 'hemos detectado un error:' + error
         }  
-     }
+    }
     finally {
      conn.releaseConnection();
     }
 }
 
+const deleteOne = async (params) => {
+    try {
+        const [product] = await conn.query('DELETE FROM product WHERE ?', params) ;
+        return product;
+    } catch (error) {
+        return {
+         error: true,
+         message: 'hemos detectado un error:' + error
+        }  
+    }
+    finally {
+     conn.releaseConnection();
+    }
+}
 
 module.exports = {
-    getAll, getOne, getAllByPage, create
+    getAll, getOne, getAllByPage, create, deleteOne
 };
