@@ -89,6 +89,10 @@
     border-bottom: 2px solid var(--primary-solid);
 }
 
+.medium {
+    font-size: var(--font-big);
+}
+
 .selectCuotas {
     width: 346.034px;
     height: 44.285px;

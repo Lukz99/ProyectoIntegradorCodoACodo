@@ -1,15 +1,8 @@
 const express = require('express');
-const router = express.Router();
-const multer = require('multer');
-const path = require('path');
+const upload = require('../middlewares/uploadFiles');
 const { admin, createView, createItem, editView, editItem, deleteItem } = require('../controllers/admin.controllers');
 
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => cb(null, path.resolve(__dirname, '../../public/img/products')),
-    filename: (req, file, cb) => cb(null, `${Date.now()}-${file.originalname}`)
-});
-
-const upload = multer({storage});
+const router = express.Router();
 
 router.get('/', admin);
 router.get('/create', createView);

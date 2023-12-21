@@ -57,10 +57,15 @@
     font-family: var(--base-font);
     font-size: var(--font-medium);
     font-weight: 400;
-    margin-left: var(--spacing-12);
+    /*margin-left: var(--spacing-12);*/
     border: 0;
     border-bottom: 2px solid var(--primary-solid);
 }
+
+.no_border{
+    border: 0;
+}
+
 
 .margen_large {
     width: 285px;
@@ -69,6 +74,10 @@
 .margen_medium {
     width: 130px;
     margin-right: var(--spacing-36);
+}
+
+.fill_option {
+    margin-top: var(--spacing-12);
 }
 
 .margen_small {

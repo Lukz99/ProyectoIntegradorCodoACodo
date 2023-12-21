@@ -10,20 +10,20 @@
         <section class="formItem"><!-- inicio de la segunda fila -->
             <form action="/admin/edit" method="post" enctype="application/x-www-form-urlencoded">
                 <label for="collection">Categoría:</label>
-                <select id="categoria" name="categoria">
-                    if (<%= item.category_id %>)
-                        <option value="<%= item.category_id %>" disabled selected hidden>
-                            <%= item.category_name %>
-                        </option>
+                <select id="categoria" name="categoria" class="filter_dropdown">
+                    <option value="" hidden disabled selected><%- item.category_name %></option>
+                    <option value="Figuras coleccionables">Figuras coleccionables</option>
+                    <option value="Remeras">Remeras</option>
+                    <option value="LLaveros">Llaveros</option>
                 </select>
             </form>
             <form action="#">
                 <label for="Licencia">Licencia:</label>
-                <select id="licence" name="categoria">
-                    if (<%= item.licence_id %>)
-                        <option value="<%= item.licence_id %>" disabled selected hidden>
-                            <%= item.licence_name %>
-                        </option>
+                <select id="licence" name="categoria" class="filter_dropdown">
+                    <option value="" hidden disabled selected><%-item.licence_name%></option>
+                    <option value="pokemon">Pokemon</option>
+                    <option value="starwars">Star Wars</option>
+                    <option value="harrypotter">Harry Potter</option>
                 </select>
                
             </form>
@@ -46,7 +46,9 @@
                 <label class="catalogoItem" for="sku">SKU:</label>
                 <input class="cataLog" style="max-width: 130px" type="text" name="sku" value="<%= item.sku %>">
                 <label class="catalogoItem" style="margin-left: 56.48px" for="precio">Precio:</label>
-                <input class="cataLog" style="max-width: 130px" type="text" name="precio" value="$<%= item.price %>">
+                <span class="cataLog">$
+                    <input class="no_border" style="max-width: 130px" type="text" name="precio" value="<%= item.price %>">
+                </span>
                 <label class="catalogoItem" style="margin-left: 56.48px" for="stock:">Stock:</label>
                 <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="stock:"
                     value="<%= item.stock %>">
@@ -56,8 +58,11 @@
         <section style="margin-top: 51.58px; margin-bottom: 51.58px;"><!-- inicio de la sexta fila -->
             <form action="#">
                 <label class="catalogoItem" for="descuento">Descuento:</label>
-                <input class="cataLog" style="max-width: 55px; text-align: center " type="text" name="descuento"
-                    value="<%= item.discount %>%">
+                <span class="cataLog">
+                    <input class="no_border" style="max-width: 55px; text-align: center " type="text" name="descuento" value="<%= item.discount %>">
+                    %
+                </span>
+
                 <label class="catalogoItem" style="margin-left: 15px" for="cuotas">Cuotas:</label>
                 <select class="way_to_pay" id="cuotas" name="dues">
                     <option value="0">Sin cuotas</option>

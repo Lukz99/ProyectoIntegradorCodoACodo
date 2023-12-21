@@ -46,6 +46,22 @@ const getOne = async (param) => {
    }
 }
 
+const create = async (params) => {
+    try {
+        const [product] = await conn.query('INSERT INTO product (product_name, product_description, category_id, licence_id, sku, price, stock, discount, dues, image_front, image_back) VALUES ?', [params]) ;
+        return product;
+    } catch (error) {
+        return {
+         error: true,
+         message: 'hemos detectado un error:' + error
+        }  
+     }
+    finally {
+     conn.releaseConnection();
+    }
+}
+
+
 module.exports = {
-    getAll, getOne, getAllByPage
+    getAll, getOne, getAllByPage, create
 };
