@@ -13,3 +13,5 @@ Luego ejecute:
 npm run dev
 
 (Para que se ejecute el servidor).
+Desde algún navegador, diríjase a localhost:3300
+¡A navegar!
