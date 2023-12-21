@@ -13,6 +13,12 @@
     font-size: var(--font-jumbo);
 }
 
+.button_void {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .title_agregar {
     font-family: var(--alternative-font);
     font-size: var(--font-large);

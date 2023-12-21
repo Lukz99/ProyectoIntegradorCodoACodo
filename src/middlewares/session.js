@@ -1,4 +1,4 @@
-/*const session = require('cookie-session');
+const session = require('cookie-session');
 
 function initSession() {
     return session({
@@ -6,5 +6,4 @@ function initSession() {
     });
 };
 
-module.exports = initSession;
-*/
+module.exports = { initSession };

@@ -14,6 +14,7 @@ const shopControllers = {
                 data
             });
     },
+    
     item: async (req, res) => {
         const data = await getAll();
         const itemId = req.params.id;
@@ -25,12 +26,15 @@ const shopControllers = {
             data
         });
     },
+    
     addItem: (req, res) => res.send('Esta es la ruta para agregar un nuevo item'),
+
     cart: (req, res) => {
         res.render(path.resolve(__dirname, '../views/shop/cart.ejs'), {
             title: "Carrito"
         });
     },
+
     addToCart: (req, res) => res.send('Esta es la ruta para agregar un nuevo item al carrito'),
 }
 

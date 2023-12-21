@@ -76,6 +76,22 @@ const deleteOne = async (params) => {
     }
 }
 
+const edit = async (params, id) => {
+    try {
+        const [product] = await conn.query('UPDATE product SET ? WHERE ?', [params, id]);
+        return product;
+    } catch (error) {
+        return {
+         error: true,
+         message: 'hemos detectado un error:' + error
+        }  
+    }
+    finally {
+     conn.releaseConnection();
+    }
+}
+
+
 module.exports = {
-    getAll, getOne, getAllByPage, create, deleteOne
+    getAll, getOne, getAllByPage, create, deleteOne, edit
 };

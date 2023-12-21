@@ -126,4 +126,5 @@
     outline: none;
     width: 175px;
     height: 45px;
+    transition: background .3s ease-in-out;
 }
