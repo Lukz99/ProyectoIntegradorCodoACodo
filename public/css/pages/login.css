@@ -96,3 +96,7 @@
     color: var(--secondary-solid);
     font-size: 7px;
 }
+
+#button_login {
+    cursor: pointer;
+}

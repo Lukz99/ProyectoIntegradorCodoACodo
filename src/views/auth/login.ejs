@@ -1,4 +1,4 @@
-<%- include('../partials/headerAdmin.ejs') %>
+<%- include('../partials/header.ejs') %>
     <main class="login-all"><!-- inicio cuerpo principal -->
         <div class="login">
             <span class="login-box">
@@ -9,30 +9,31 @@
                 </section><!-- fin de la primera fila -->
 
                 <div class="datos"><!-- INGRESO DATOS -->
+                    <form  action="#" method="post">
                     <section><!-- EMAIL -->
-                        <form class="email" action="#">
+                        <span class="email">
                             <label class="write" for="email">Email:</label>
                             <div>
-                                <input class="complete" type="text" placeholder="ejemplo@correo.com">
+                                <input class="complete" name="email" type="text" placeholder="ejemplo@correo.com">
                             </div>
-                        </form>
+                        </span>
                     </section><!-- fin de la EMAIL -->
 
                     <section><!-- PASSWORD -->
-                        <form class="pass1" action="#">
+                        <span class="pass1" action="#">
                             <label class="write" for="pwd">Contraseña:</label>
-                            <input class="complete" type="password" id="pwd" name="pwd" placeholder=" ">
-                        </form>
+                            <input class="complete" type="password" id="pwd" name="password" placeholder=" ">
+                        </span>
                     </section><!-- fin de PASSWORD -->
                 </div>
 
                 <section class="ingresar"><!-- inicio de la cuarta fila -->
-                    <input class="boton" type="submit" value="Ingresar">
+                    <input class="boton" id="button_login" type="submit" value="Ingresar">
                     <div class="rec">
-                        <form action="#">
+                        <span action="#">
                             <input type="checkbox" id="recordar" name="recordar" value="recordarme">
                             <label for="recordar"> Recordarme</label><br>
-                        </form>
+                        </span>
                     </div>
                 </section><!-- fin de la cuarta fila --> 
 
@@ -41,10 +42,11 @@
                         <div>Olvidé mi contraseña</div>
                     </a>
                 </section><!-- fin de la quinto fila -->
+            </form>
             </span>
         </div>
     </main><!-- fin cuerpo principal -->
 
-    <%- include('../partials/footerAdmin.ejs') %>
+    <%- include('../partials/footer.ejs') %>
 </body>
 </html>

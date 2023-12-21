@@ -15,11 +15,12 @@ const authControllers = {
         const { email, password } = req.body;
         const validateEmail = credentials.email == email;
         const validatePassword = credentials.password == password;
-        req.session.isLogged = (validateEmail && validatePassword)
-
+        req.session.isLogged = (validateEmail && validatePassword);
         if (req.session.isLogged) {
             res.locals.isLogged = true;
-            return res.redirect('/admin');
+            res.redirect('/admin');
+        } else {
+            res.redirect('/auth/login');
         }
     },
 
@@ -31,8 +32,9 @@ const authControllers = {
     registerRoute: (req, res) => res.send('Esta es la ruta que Crea un nuevo usuario'),
 
     logout: (req, res) => {
-        res.session.isLogged = false;
-        res.send('Sesión finalizada con éxito')
+       req.session.isLogged = false;
+       res.locals.isLogged = false;
+       res.redirect('/home');
     }
 }
 
